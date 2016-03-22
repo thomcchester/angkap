@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+  <meta charset="utf-8" />
+  <title>Whatever</title>
+<script type ="text/javascript" src ="/assets/vendors/angular.min.js"></script>
+<script type ="text/javascript" src ="/assets/scripts/app.js"></script>
+
+</head>
+<body>
+<div ng-controller="IntroController">
+  <h1>Kappa</h1>
+  <!-- <p ng-hide="employee.name">
+    Enter the employee Info!
+  </p>
+  <p ng-show="employee.name">
+    Make sure you enter all Info!
+  </p> -->
+
+  <ng-include src="'/views/employeeForm.html'"></ng-include>
+  <ng-include src="'/views/employeeData.html'"></ng-include>
+</div>
+
+</body>
+</html>

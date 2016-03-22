@@ -1,0 +1,10 @@
+<div ng-repeat ="(id, item) in students">
+  <p>
+    {{id}}
+  </p>
+  <img ng-src="{{item.linkedIn}}" />
+  <p>
+    <a ng-href="{{item.github}}">This dude's github</a>
+  </p>
+  <!-- <button ng-click="meow()">Meow at me</button> -->
+</div>
